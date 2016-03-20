@@ -155,7 +155,7 @@ public class MainActivityFragment extends Fragment {
                         .appendPath("movie")
                         .appendQueryParameter("sort_by",params[0])
                         .appendQueryParameter("page",params[1])
-                        .appendQueryParameter("api_key", "f4f0c670c84d3517be039f9952e28d33");
+                        .appendQueryParameter("api_key", "");
                 Log.v(LOG_TAG, url_builder.build().toString());
                 URL url = new URL(url_builder.build().toString());
 

@@ -44,15 +44,6 @@ public class HomeScreenAdapter extends ArrayAdapter<MovieModel> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.each_movie_item, parent, false);
         }
-        /*if (convertView == null)
-        {
-            each_movie_poster = new ImageView(getContext());
-        }
-        else {
-            // Recycling the image view - Based on convertView parameter
-            each_movie_poster = (ImageView) convertView;
-        }
-        */
         ProgressBar progressBar = null;
         if(convertView != null){
             progressBar = (ProgressBar) convertView.findViewById(R.id.progressBar);

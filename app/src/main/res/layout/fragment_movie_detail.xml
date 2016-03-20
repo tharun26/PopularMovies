@@ -1,9 +1,103 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.tharun26.tharun_gowrishankar.moviebox.MovieDetailFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layou">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#b10e996e"
+        android:id="@+id/title_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Original Title"
+            android:id="@+id/original_title"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_above="@+id/poster"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/poster"
+            android:layout_below="@+id/title_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/overview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/poster"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/rating"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignBottom="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_toEndOf="@+id/poster"
+        android:layout_marginBottom="59dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/release_date"
+        android:layout_above="@+id/rating"
+        android:layout_alignLeft="@+id/rating"
+        android:layout_alignStart="@+id/rating"
+        android:layout_marginBottom="45dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Release Date"
+        android:id="@+id/year"
+        android:layout_alignLeft="@+id/release_date"
+        android:layout_alignStart="@+id/release_date"
+        android:layout_above="@+id/release_date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vote"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_above="@+id/rating"
+        android:layout_alignRight="@+id/year"
+        android:layout_alignEnd="@+id/year"
+        android:layout_alignLeft="@+id/rating"
+        android:layout_alignStart="@+id/rating" />
 </RelativeLayout>
+</ScrollView>

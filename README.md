@@ -8,4 +8,4 @@ Example:
         After: .appendQueryParameter("api_key", "123456789");
 
 # PopularMovies
-Popular Movies Stage1
+Popular Movies Stage 1
